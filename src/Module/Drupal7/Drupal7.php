@@ -18,15 +18,17 @@ class Drupal7 extends DrupalBaseModule implements DrupalModuleInterface
     use Asserts;
     use EntityTrait;
     use FieldTrait;
+    protected $initialized;
 
-    /**
+  /**
      * { @inheritdoc }
      */
     public function _initialize()
     {
-
-        $this->bootstrapDrupal();
-
+        if (!$this->initialized) {
+          $this->bootstrapDrupal();
+          $this->initialized = TRUE;
+        }
     }
 
     /**
