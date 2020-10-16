@@ -1,5 +1,5 @@
 {
-    "name": "droptica/codeception-drupal-bootstrap",
+    "name": "codeception/module-drupal",
     "description": "A module for Codeception that exposes the Drupal API to test suites.",
     "license": "MIT",
     "authors": [
